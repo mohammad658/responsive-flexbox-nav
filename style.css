@@ -1,0 +1,130 @@
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: tahoma;
+    margin: 0;
+    background: url(9.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    color: #0a0a0b;
+    overflow: hidden;
+}
+nav, ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 1.5rem;
+    font-family: tahoma;
+    letter-spacing: 4px;
+
+}
+h2{
+    font-size: tahoma;
+    font-weight: 500;
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 100px 0;
+}
+header nav ul{
+    display: flex;
+}
+header nav li{
+    margin: 0 15px;
+}
+header nav li:first-child{
+    margin-left: 0;
+}
+header nav li:last-child{
+    margin-right: 0;
+}
+a.btn{
+    color: #fff;
+    padding: 10px;
+    transition: all .2s;
+    background: #d73851;
+}
+.cover{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05)0%, rgba(0,0,0,0)100%);
+    padding: 20px 50px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-form input[type="submit"]{
+    background: #ef3f5a;
+    border: 1px solid #ef3f5a;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.flex-form {
+    display: -webkit-box;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 500px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, .3);
+}
+.flex-form > *{
+    border: 0;
+    padding: 0 0 0 10px;
+    background: #fff;
+    line-height: 50px;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+
+}
+input[type="search"]{
+    flex-basis: 500px;
+}
+@media all and (max-width:800px){
+    body{
+        font-size: 0.9rem;
+
+    }
+    .flex-form{
+        width: 100%;
+    }
+    input[type="search"]{
+        flex-basis: 100%;
+    }
+    .flex-form > *{
+        font-size: 0.9rem;
+
+    }
+    header{
+        flex-direction: column;
+        padding: 10px !important;
+    }
+}
